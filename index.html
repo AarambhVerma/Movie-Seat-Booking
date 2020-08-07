@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <h1>Movie Seat Booking App</h1>
   <div class="movie-container">
     <label>Pick a movie</label>
     <select id="movie">
@@ -49,21 +50,11 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    <div class="row">
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
     </div>
     <div class="row">
       <div class="seat"></div>
@@ -79,8 +70,8 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
@@ -91,14 +82,24 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
-      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
     </div>
   </div>
 
   <p class="text">You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span></p>
-
+  <button type="button" onclick="clearLocalStorage()" id="reset-btn">Hard Reset</button>
   <script src="script.js" charset="utf-8"></script>
 </body>
 

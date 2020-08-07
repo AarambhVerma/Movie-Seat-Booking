@@ -3,6 +3,7 @@ const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById('movie')
+const reset = document.getElementById('reset-btn')
 
 populateUI();
 
@@ -47,13 +48,19 @@ function populateUI() {
   }
 }
 
+// Clear local storage
+function clearLocalStorage() {
+  window.localStorage.clear()
+  location.reload()
+}
+
+
 // movie select event
 movieSelect.addEventListener('change', e => {
   ticketPrice = +e.target.value
   setMovieData(e.target.selectedIndex, e.target.value);
   updateSelectedCount();
 });
-
 
 //Seat click event
 container.addEventListener('click', e => {
